@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | Amazon Clone</title>
+    <style>
+        /* Same CSS as login page */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .auth-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 { text-align: center; margin-bottom: 20px; }
+
+        label { display: block; margin-top: 10px; margin-bottom: 5px; }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            background: #f0c14b;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover { background: #e2b33c; }
+
+        .auth-link { text-align: center; margin-top: 10px; }
+
+        .auth-link a { color: #0073bb; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="auth-container">
+    <h2>Create Account</h2>
+
+    <form method="POST" action="{{ url_for('signup') }}">
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" name="confirm_password" required>
+
+        <button type="submit">Create Account</button>
+    </form>
+
+    <p class="auth-link">
+        Already have an account? <a href="/login">Sign in</a>
+    </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account | Amazon Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+        }
+
+        .navbar {
+            background: #131921;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a { color: #f0c14b; text-decoration: none; }
+
+        .account-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .account-card {
+            background: #f8f8f8;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .account-links a {
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 15px;
+            background: #f0c14b;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .account-links a:hover { background: #e2b33c; }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <h2>My Account</h2>
+    <a href="/login">Logout</a>
+</header>
+
+<div class="account-container">
+    <h3>Welcome, {{ current_user.id }}</h3>
+
+    <div class="account-card">
+        <p>Account Email:</p>
+        <strong>{{ current_user.id }}</strong>
+    </div>
+
+    <div class="account-links">
+        <a href="/cart">Go to Cart</a>
+        <a href="/">Return to Home</a>
+    </div>
+</div>
+
+</body>
+</html>
