@@ -39,16 +39,16 @@ Flask routing, sessions, and authentication flow.
 ## 📁 Project Structure
 
 Web App Amazon-UI/
-                  │
-                  ├── app.py
-                  ├── templates/
-                  │ ├── login.html
-                  │ ├── signup.html
-                  │ ├── account.html
-                  │ └── index.html
-                  │
-                  ├── static/
-                  │ └── style.css
-                  │
-                  └── README.md
+ │
+ ├── app.py
+ ├── templates/
+ ├    ├── login.html
+ ├    ├── signup.html
+ ├    ├── account.html
+ ├    └── index.html
+
+ ├── static/
+ │   └── style.css
+ │
+ └── README.md
 
